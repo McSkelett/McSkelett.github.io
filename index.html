@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>McSkelett</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+        body {
+            background-image: url("background.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-attachment: fixed;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            display: flex;
+            min-height: 100vh;
+            padding: 20px; 
+            box-sizing: border-box;
+        }
+        .box {
+            max-width: 800px; 
+            width: 100%; 
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 30px;
+            backdrop-filter: blur(3px);
+            padding: 20px;
+            position: relative;
+            color:#fff;
+            text-align: center;
+            line-height: 1.5; 
+            font-family: "Comfortaa", sans-serif;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+        .box h1 {
+            margin-top: 60px;
+            font-size: 32px; 
+            font-weight: bold;
+        }
+        .box p {
+            font-size: 18px; 
+            margin: 5px 0 20px;
+        }
+        .inbox {
+            padding: 10px;
+            color: #fff;
+            border-radius: 10px;
+            font-size: 18px; 
+            margin-bottom: 15px;
+            background: rgba(255, 255, 255, 0.1);
+        }
+        .pfp {
+            height: 80px;
+            width: 80px;
+            border-radius: 5px;
+            object-fit: cover;
+            border:3px solid rgba(255, 255, 255, 0.5);
+            position: absolute;
+            top:-50px;
+            left:50%;
+            transform:translateX(-50%);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 1);
+        }
+        .icon-container{
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+        .icon {
+            height: 60px;
+            width: 60px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .icon:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+        }
+        
+        @media (max-width: 600px) {
+            .box {
+                padding: 15px;
+            }
+            .box h1 {
+                font-size: 28px;
+            }
+            .inbox, .box p {
+                font-size: 16px;
+            }
+            .icon {
+                height: 50px;
+                width: 50px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="image.png" alt="pfpmc" class="pfp"/>
+        <h1>McSkelett</h1>
+        <div class="inbox">
+        Hallo ich bin der echte McSkelett und das ist meine Website <br>
+        Ich lerne zurzeit das Programieren und das ist meine erste Website <br>
+        </div>
+        <div class="icon-container">
+            <a href="https://discord.com/users/1187054303643443394"><img src="discord.png" alt="discordicon" class="icon"></a>
+            <a href="https://laby.net/@McSkelett"><img src="labyiconbau-removebg-preview.png" alt="labyicon" class="icon"></a>
+            <a href="https://dc.novacraft.life/"><img src="nova_pg.png" alt="novaicon" class="icon"></a>
+        </div>
+    </div>
+</body>
+</html>
